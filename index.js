@@ -11,8 +11,10 @@ const songs = [
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
-    {title: ""}
-    // Feel free to add even more songs
+    {title: "Come a little Bit Closer", artist: "Jay and the Americans", genre: "R&B"},
+    {title: "I'll Never Fall in Love Again", artist: "Dionne Warwick", genre: "Pop"},
+    {title: "The Pod Chase", artist: "Tyler Bates", genre: "R&B"}
+    
 ];
 
 
@@ -20,7 +22,11 @@ const songs = [
 const guardians = {
     "Star-Lord": "Rock",
     "Gamora": "Pop",
-    // Add preferences for Drax, Rocket, and Groot
+    "Drax": "R&B",
+    "Rocket": "Rock",
+    "Groot" : "Pop",
+    "Mantis" : "R&B"
+    // Add preferences for Drax, Rocket, Groot, and Mantis
 };
 
 // Function to generate playlist based on preferred genre
