@@ -47,10 +47,29 @@ function generatePlaylist(guardians, songs) {
     playlistsDiv.innerHTML = "";
 
     // To display the playlist for each Guardian
-    playlists.forEach(({guardian, playlist}) =>
+    playlists.forEach(({guardian, playlist}) => {
         const guardianSection = document.createElement('div');
-        guardianSection.classList.add('playlist')
-    )
+        guardianSection.classList.add('playlist');
+
+        //Name of each Guardian on their playlists
+        const nameOfGuardian = document.createElement('h2');
+        nameOfGuardian.textContent = `${guardian}'s  Playlist`;
+        guardianSection.appendChild(nameOfGuardian);
+
+        //Each guardain playlist
+        const playlist = document.createElement('ul');
+        playlist.forEach(song => {
+            const songTitle = document.createElement('li')
+            songTitle.textContent = `${song.title}`;
+
+            const  songArtist = document.createElement('li')
+
+
+
+        })
+
+
+})
     // Your code here
 }
 
