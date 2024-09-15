@@ -42,6 +42,15 @@ function generatePlaylist(guardians, songs) {
             playlist: playlist
         }
     })
+
+    // To clear any content before displaying my new playlist
+    playlistsDiv.innerHTML = "";
+
+    // To display the playlist for each Guardian
+    playlists.forEach(({guardian, playlist}) =>
+        const guardianSection = document.createElement('div');
+        guardianSection.classList.add('playlist')
+    )
     // Your code here
 }
 
