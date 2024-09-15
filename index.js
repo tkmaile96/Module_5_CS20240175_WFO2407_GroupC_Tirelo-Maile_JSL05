@@ -63,14 +63,18 @@ function generatePlaylist(guardians, songs) {
             songTitle.textContent = `${song.title}`;
 
             const  songArtist = document.createElement('li')
+            songArtist.textContent = `by ${song.artist}`;
 
 
+            ul.appendChild(songTitle);
+            ul.appendChild(songArtist);
+        });
 
-        })
 
-
-})
-    // Your code here
+        guardianSection.appendChild(ul);
+        playlistsDiv.appendChild(guardianSection);
+});
+    
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
